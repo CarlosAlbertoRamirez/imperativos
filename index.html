@@ -44,7 +44,7 @@ main{padding:28px}.screen{display:none;animation:fadeIn .35s ease}.screen.active
   <p style="margin-top:12px;color:var(--muted);line-height:1.7">This activity focuses especially on <strong>tú</strong> commands, but also includes formal commands, plural commands and nosotros commands. It also practices pronoun placement in affirmative and negative commands.</p>
   <div class="quick-guide"><div class="guide-box"><h3>Tú commands</h3><ul><li>Affirmative: habla, come, escribe</li><li>Irregular: ven, di, sal, haz, ten, ve, pon, sé</li><li>Negative: no hables, no comas, no vengas</li></ul></div><div class="guide-box"><h3>Pronouns</h3><ul><li>Affirmative: attach → dámelo</li><li>Negative: before verb → no me lo des</li><li>léelo / no lo leas</li><li>cómprala / no la compres</li></ul></div></div>
   <div class="quick-guide"><div class="guide-box"><h3>Usted / ustedes</h3><ul><li>usted: hable, coma, escriba</li><li>negative: no hable, no coma</li><li>ustedes: hablen, coman, escriban</li><li>no hablen, no lleguen</li></ul></div><div class="guide-box"><h3>Nosotros</h3><ul><li>Let's study: estudiemos</li><li>Let's go: vayamos</li><li>Let's sit: sentémonos</li><li>Let's not sit: no nos sentemos</li></ul></div></div>
-  <div class="intro-grid"><div class="mini-card"><span class="icon">✅</span><strong>50 questions</strong>Mixed imperative practice.</div><div class="mini-card"><span class="icon">👤</span><strong>More tú practice</strong>Positive, negative and irregular.</div><div class="mini-card"><span class="icon">🔗</span><strong>Pronouns</strong>dámelo / no me lo des.</div><div class="mini-card"><span class="icon">🎲</span><strong>Randomized options</strong>Fixed question order, randomized options.</div></div>
+  <div class="intro-grid"><div class="mini-card"><span class="icon">✅</span><strong>50 questions</strong>Mixed imperative practice.</div><div class="mini-card"><span class="icon">👤</span><strong>More tú practice</strong>Positive, negative and irregular.</div><div class="mini-card"><span class="icon">🔗</span><strong>Pronouns</strong>dámelo / no me lo des.</div><div class="mini-card"><span class="icon">🎲</span><strong>Randomized options</strong>Mixed fixed question order, randomized options.</div></div>
   <div class="study-tip"><strong>Study tip:</strong> First identify the subject: tú, usted, ustedes or nosotros. Then decide if the command is affirmative or negative. Pronouns attach only in affirmative commands.</div>
   <button class="btn-primary" id="startBtn">Start Practice</button>
 </div></section>
@@ -61,19 +61,19 @@ main{padding:28px}.screen{display:none;animation:fadeIn .35s ease}.screen.active
 <script>
 const originalQuestions = [
   {
-    "category": "Tú affirmative",
-    "prompt": "Choose the correct affirmative tú command.",
-    "spanish": "___ más despacio, por favor. (hablar)",
-    "translation": "Speak more slowly, please.",
+    "category": "Tú + pronouns",
+    "prompt": "Choose the correct affirmative tú command with pronoun.",
+    "spanish": "El mensaje es importante. ___ hoy. (leer + lo)",
+    "translation": "The message is important. Read it today.",
     "options": [
-      "Habla",
-      "Hables",
-      "Hable",
-      "Hablen"
+      "Léelo",
+      "Lo lee",
+      "No lo leas",
+      "Lee lo"
     ],
-    "answer": "Habla",
-    "explanation": "For regular affirmative tú commands, use the él/ella form of the present indicative.",
-    "hint": "Affirmative tú: habla, come, escribe.",
+    "answer": "Léelo",
+    "explanation": "Affirmative commands attach pronouns; leer + lo = léelo.",
+    "hint": "Leer + lo = léelo.",
     "level": "B1-B2"
   },
   {
@@ -90,182 +90,6 @@ const originalQuestions = [
     "answer": "Haz",
     "explanation": "Hacer has an irregular affirmative tú command: haz.",
     "hint": "Irregular tú: haz.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú affirmative",
-    "prompt": "Choose the correct affirmative tú command.",
-    "spanish": "___ la verdad. (decir)",
-    "translation": "Tell the truth.",
-    "options": [
-      "Di",
-      "Dice",
-      "Digas",
-      "Diga"
-    ],
-    "answer": "Di",
-    "explanation": "Decir has an irregular affirmative tú command: di.",
-    "hint": "Irregular tú: di.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú affirmative",
-    "prompt": "Choose the correct affirmative tú command.",
-    "spanish": "___ aquí un momento. (venir)",
-    "translation": "Come here for a moment.",
-    "options": [
-      "Ven",
-      "Vienes",
-      "Vengas",
-      "Venga"
-    ],
-    "answer": "Ven",
-    "explanation": "Venir has an irregular affirmative tú command: ven.",
-    "hint": "Irregular tú: ven.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú affirmative",
-    "prompt": "Choose the correct affirmative tú command.",
-    "spanish": "___ el libro en la mesa. (poner)",
-    "translation": "Put the book on the table.",
-    "options": [
-      "Pon",
-      "Pones",
-      "Pongas",
-      "Ponga"
-    ],
-    "answer": "Pon",
-    "explanation": "Poner has an irregular affirmative tú command: pon.",
-    "hint": "Irregular tú: pon.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú affirmative",
-    "prompt": "Choose the correct affirmative tú command.",
-    "spanish": "___ cuidado con ese perro. (tener)",
-    "translation": "Be careful with that dog.",
-    "options": [
-      "Ten",
-      "Tienes",
-      "Tengas",
-      "Tenga"
-    ],
-    "answer": "Ten",
-    "explanation": "Tener has an irregular affirmative tú command: ten.",
-    "hint": "Irregular tú: ten.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú affirmative",
-    "prompt": "Choose the correct affirmative tú command.",
-    "spanish": "___ temprano mañana. (salir)",
-    "translation": "Leave early tomorrow.",
-    "options": [
-      "Sal",
-      "Sales",
-      "Salgas",
-      "Salga"
-    ],
-    "answer": "Sal",
-    "explanation": "Salir has an irregular affirmative tú command: sal.",
-    "hint": "Irregular tú: sal.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú affirmative",
-    "prompt": "Choose the correct affirmative tú command.",
-    "spanish": "___ amable con tus compañeros. (ser)",
-    "translation": "Be kind to your classmates.",
-    "options": [
-      "Sé",
-      "Eres",
-      "Seas",
-      "Sea"
-    ],
-    "answer": "Sé",
-    "explanation": "Ser has an irregular affirmative tú command: sé.",
-    "hint": "Irregular tú: sé.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú affirmative",
-    "prompt": "Choose the correct affirmative tú command.",
-    "spanish": "___ al supermercado después de clase. (ir)",
-    "translation": "Go to the supermarket after class.",
-    "options": [
-      "Ve",
-      "Vas",
-      "Vayas",
-      "Vaya"
-    ],
-    "answer": "Ve",
-    "explanation": "Ir has an irregular affirmative tú command: ve.",
-    "hint": "Irregular tú: ve.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú negative",
-    "prompt": "Choose the correct negative tú command.",
-    "spanish": "No ___ tan rápido. (hablar)",
-    "translation": "Don't speak so fast.",
-    "options": [
-      "hables",
-      "habla",
-      "hable",
-      "hablen"
-    ],
-    "answer": "hables",
-    "explanation": "Negative tú commands use the present subjunctive.",
-    "hint": "Negative tú: no hables.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú negative",
-    "prompt": "Choose the correct negative tú command.",
-    "spanish": "No ___ eso ahora. (hacer)",
-    "translation": "Don't do that now.",
-    "options": [
-      "hagas",
-      "haz",
-      "hace",
-      "haga"
-    ],
-    "answer": "hagas",
-    "explanation": "The negative tú command of hacer is no hagas.",
-    "hint": "Negative tú of hacer: no hagas.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú negative",
-    "prompt": "Choose the correct negative tú command.",
-    "spanish": "No ___ mentiras. (decir)",
-    "translation": "Don't tell lies.",
-    "options": [
-      "digas",
-      "di",
-      "dice",
-      "diga"
-    ],
-    "answer": "digas",
-    "explanation": "The negative tú command of decir is no digas.",
-    "hint": "Negative tú of decir: no digas.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú negative",
-    "prompt": "Choose the correct negative tú command.",
-    "spanish": "No ___ tarde. (venir)",
-    "translation": "Don't come late.",
-    "options": [
-      "vengas",
-      "ven",
-      "vienes",
-      "venga"
-    ],
-    "answer": "vengas",
-    "explanation": "The negative tú command of venir is no vengas.",
-    "hint": "Negative tú of venir: no vengas.",
     "level": "B1-B2"
   },
   {
@@ -287,17 +111,97 @@ const originalQuestions = [
   {
     "category": "Tú negative",
     "prompt": "Choose the correct negative tú command.",
-    "spanish": "No ___ miedo. (tener)",
-    "translation": "Don't be afraid.",
+    "spanish": "No ___ solo de noche. (ir)",
+    "translation": "Don't go alone at night.",
     "options": [
-      "tengas",
-      "ten",
-      "tienes",
-      "tenga"
+      "vayas",
+      "ve",
+      "vas",
+      "vaya"
     ],
-    "answer": "tengas",
-    "explanation": "The negative tú command of tener is no tengas.",
-    "hint": "Negative tú of tener: no tengas.",
+    "answer": "vayas",
+    "explanation": "The negative tú command of ir is no vayas.",
+    "hint": "Negative tú of ir: no vayas.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Nosotros + pronouns",
+    "prompt": "Choose the correct nosotros command with a reflexive pronoun.",
+    "spanish": "Estamos cansados. ___ un momento. (sentarse)",
+    "translation": "We are tired. Let's sit down for a moment.",
+    "options": [
+      "Sentémonos",
+      "Nos sentemos",
+      "Sentemosnos",
+      "No nos sentemos"
+    ],
+    "answer": "Sentémonos",
+    "explanation": "Affirmative nosotros commands attach the reflexive pronoun: sentémonos.",
+    "hint": "Affirmative: pronoun attached.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Mixed challenge",
+    "prompt": "Choose the best command.",
+    "spanish": "Tu estudiante quiere copiar la respuesta. ¿Qué le dices?",
+    "translation": "Your student wants to copy the answer. What do you tell him/her?",
+    "options": [
+      "No la copies.",
+      "Cópiala.",
+      "No cópiala.",
+      "No la copia."
+    ],
+    "answer": "No la copies.",
+    "explanation": "Negative tú command with pronoun: no la copies.",
+    "hint": "No + pronoun + subjunctive.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Theory",
+    "prompt": "Choose the correct rule.",
+    "spanish": "In negative commands with pronouns, the pronouns usually go...",
+    "translation": "Example: no me lo des, no lo leas.",
+    "options": [
+      "before the verb",
+      "attached to the end",
+      "after the verb",
+      "after the noun"
+    ],
+    "answer": "before the verb",
+    "explanation": "Negative commands place pronouns before the conjugated command.",
+    "hint": "Negative = before.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú affirmative",
+    "prompt": "Choose the correct affirmative tú command.",
+    "spanish": "___ más despacio, por favor. (hablar)",
+    "translation": "Speak more slowly, please.",
+    "options": [
+      "Habla",
+      "Hables",
+      "Hable",
+      "Hablen"
+    ],
+    "answer": "Habla",
+    "explanation": "For regular affirmative tú commands, use the él/ella form of the present indicative.",
+    "hint": "Affirmative tú: habla, come, escribe.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú affirmative",
+    "prompt": "Choose the correct affirmative tú command.",
+    "spanish": "___ amable con tus compañeros. (ser)",
+    "translation": "Be kind to your classmates.",
+    "options": [
+      "Sé",
+      "Eres",
+      "Seas",
+      "Sea"
+    ],
+    "answer": "Sé",
+    "explanation": "Ser has an irregular affirmative tú command: sé.",
+    "hint": "Irregular tú: sé.",
     "level": "B1-B2"
   },
   {
@@ -319,97 +223,49 @@ const originalQuestions = [
   {
     "category": "Tú negative",
     "prompt": "Choose the correct negative tú command.",
-    "spanish": "No ___ tan impaciente. (ser)",
-    "translation": "Don't be so impatient.",
+    "spanish": "No ___ mentiras. (decir)",
+    "translation": "Don't tell lies.",
     "options": [
-      "seas",
-      "sé",
-      "eres",
-      "sea"
+      "digas",
+      "di",
+      "dice",
+      "diga"
     ],
-    "answer": "seas",
-    "explanation": "The negative tú command of ser is no seas.",
-    "hint": "Negative tú of ser: no seas.",
+    "answer": "digas",
+    "explanation": "The negative tú command of decir is no digas.",
+    "hint": "Negative tú of decir: no digas.",
     "level": "B1-B2"
   },
   {
-    "category": "Tú negative",
-    "prompt": "Choose the correct negative tú command.",
-    "spanish": "No ___ solo de noche. (ir)",
-    "translation": "Don't go alone at night.",
+    "category": "Ustedes negative",
+    "prompt": "Choose the correct negative ustedes command.",
+    "spanish": "No ___ durante el examen. (hablar)",
+    "translation": "Don't talk during the exam.",
     "options": [
-      "vayas",
-      "ve",
-      "vas",
-      "vaya"
+      "hablen",
+      "hablan",
+      "habla",
+      "hables"
     ],
-    "answer": "vayas",
-    "explanation": "The negative tú command of ir is no vayas.",
-    "hint": "Negative tú of ir: no vayas.",
+    "answer": "hablen",
+    "explanation": "Negative ustedes commands use the present subjunctive: no hablen.",
+    "hint": "No hablen.",
     "level": "B1-B2"
   },
   {
-    "category": "Tú + pronouns",
-    "prompt": "Choose the correct affirmative tú command with pronouns.",
-    "spanish": "Necesito ese libro. ___, por favor. (dar + me + lo)",
-    "translation": "I need that book. Give it to me, please.",
+    "category": "Mixed challenge",
+    "prompt": "Choose the best nosotros command.",
+    "spanish": "Tenemos poco tiempo. ___ ahora mismo. (empezar)",
+    "translation": "We have little time. Let's start right now.",
     "options": [
-      "Dámelo",
-      "Me lo da",
-      "No me lo des",
-      "Dálo me"
+      "Empecemos",
+      "Empezamos",
+      "Empieza",
+      "Empiecen"
     ],
-    "answer": "Dámelo",
-    "explanation": "In affirmative commands, pronouns attach to the end: da + me + lo = dámelo.",
-    "hint": "Affirmative: attach pronouns.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú + pronouns",
-    "prompt": "Choose the correct negative tú command with pronouns.",
-    "spanish": "Ese libro es privado. No ___, por favor. (dar + me + lo)",
-    "translation": "That book is private. Don't give it to me, please.",
-    "options": [
-      "me lo des",
-      "dámelo",
-      "desmelo",
-      "lo me des"
-    ],
-    "answer": "me lo des",
-    "explanation": "In negative commands, pronouns go before the verb: no me lo des.",
-    "hint": "Negative: pronouns before the verb.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú + pronouns",
-    "prompt": "Choose the correct affirmative tú command with pronoun.",
-    "spanish": "Esta camisa me gusta. ___, por favor. (comprar + la)",
-    "translation": "I like this shirt. Buy it, please.",
-    "options": [
-      "Cómprala",
-      "La compra",
-      "No la compres",
-      "Compra la"
-    ],
-    "answer": "Cómprala",
-    "explanation": "Affirmative commands attach the direct object pronoun and often need an accent: cómprala.",
-    "hint": "Compra + la = cómprala.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Tú + pronouns",
-    "prompt": "Choose the correct negative tú command with pronoun.",
-    "spanish": "Esa camisa es muy cara. No ___ todavía. (comprar + la)",
-    "translation": "That shirt is very expensive. Don't buy it yet.",
-    "options": [
-      "la compres",
-      "cómprala",
-      "compresla",
-      "la compra"
-    ],
-    "answer": "la compres",
-    "explanation": "Negative command: pronoun before the verb, no la compres.",
-    "hint": "No + pronoun + subjunctive.",
+    "answer": "Empecemos",
+    "explanation": "Nosotros command uses the present subjunctive. Empezar changes z to c: empecemos.",
+    "hint": "Empezar → empecemos.",
     "level": "B1-B2"
   },
   {
@@ -429,51 +285,83 @@ const originalQuestions = [
     "level": "B1-B2"
   },
   {
-    "category": "Tú + pronouns",
-    "prompt": "Choose the correct negative tú command with pronouns.",
-    "spanish": "Ya entendí el problema. No ___ otra vez. (explicar + me + lo)",
-    "translation": "I already understood the problem. Don't explain it to me again.",
+    "category": "Nosotros affirmative",
+    "prompt": "Choose the correct nosotros command.",
+    "spanish": "___ al cine esta noche. (ir)",
+    "translation": "Let's go to the movies tonight.",
     "options": [
-      "me lo expliques",
-      "explícamelo",
-      "explíquesmelo",
-      "lo me expliques"
+      "Vayamos",
+      "Vamos",
+      "Veamos",
+      "Vayan"
     ],
-    "answer": "me lo expliques",
-    "explanation": "In negative commands, both pronouns go before the verb: no me lo expliques.",
-    "hint": "Negative: no me lo expliques.",
+    "answer": "Vayamos",
+    "explanation": "The formal nosotros command of ir is vayamos, though vamos is common conversationally.",
+    "hint": "Nosotros command of ir: vayamos.",
     "level": "B1-B2"
   },
   {
-    "category": "Tú + pronouns",
-    "prompt": "Choose the correct affirmative tú command with pronoun.",
-    "spanish": "El mensaje es importante. ___ hoy. (leer + lo)",
-    "translation": "The message is important. Read it today.",
+    "category": "Tú affirmative",
+    "prompt": "Choose the correct affirmative tú command.",
+    "spanish": "___ temprano mañana. (salir)",
+    "translation": "Leave early tomorrow.",
     "options": [
-      "Léelo",
-      "Lo lee",
-      "No lo leas",
-      "Lee lo"
+      "Sal",
+      "Sales",
+      "Salgas",
+      "Salga"
     ],
-    "answer": "Léelo",
-    "explanation": "Affirmative commands attach pronouns; leer + lo = léelo.",
-    "hint": "Leer + lo = léelo.",
+    "answer": "Sal",
+    "explanation": "Salir has an irregular affirmative tú command: sal.",
+    "hint": "Irregular tú: sal.",
     "level": "B1-B2"
   },
   {
-    "category": "Tú + pronouns",
-    "prompt": "Choose the correct negative tú command with pronoun.",
-    "spanish": "Ese mensaje es falso. No ___ . (leer + lo)",
-    "translation": "That message is fake. Don't read it.",
+    "category": "Usted + pronouns",
+    "prompt": "Choose the correct formal command with pronouns.",
+    "spanish": "Necesito el reporte. ___, por favor. (dar + me + lo)",
+    "translation": "I need the report. Give it to me, please.",
     "options": [
-      "lo leas",
-      "léelo",
-      "leaslo",
-      "lo lee"
+      "Démelo",
+      "Me lo dé",
+      "Dámelo",
+      "No me lo dé"
     ],
-    "answer": "lo leas",
-    "explanation": "Negative command: no lo leas.",
-    "hint": "No + pronoun + subjunctive.",
+    "answer": "Démelo",
+    "explanation": "Affirmative usted commands attach pronouns: dé + me + lo = démelo.",
+    "hint": "Affirmative formal: démelo.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Mixed challenge",
+    "prompt": "Choose the best ustedes command.",
+    "spanish": "Estudiantes, ___ sus respuestas antes de entregar. (revisar)",
+    "translation": "Students, check your answers before turning them in.",
+    "options": [
+      "revisen",
+      "revisa",
+      "revise",
+      "revisas"
+    ],
+    "answer": "revisen",
+    "explanation": "Ustedes command: revisen.",
+    "hint": "Ustedes.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Ustedes + pronouns",
+    "prompt": "Choose the correct negative ustedes command with pronouns.",
+    "spanish": "Ese documento es confidencial. No ___ . (leer + lo)",
+    "translation": "That document is confidential. Don't read it.",
+    "options": [
+      "lo lean",
+      "léanlo",
+      "leanlo",
+      "lo leen"
+    ],
+    "answer": "lo lean",
+    "explanation": "Negative ustedes command: no lo lean.",
+    "hint": "Negative: pronoun before verb.",
     "level": "B1-B2"
   },
   {
@@ -495,65 +383,33 @@ const originalQuestions = [
   {
     "category": "Tú + pronouns",
     "prompt": "Choose the correct negative tú command with pronoun.",
-    "spanish": "Hace calor. No ___ todavía. (cerrar + la)",
-    "translation": "It's hot. Don't close it yet.",
+    "spanish": "Ese mensaje es falso. No ___ . (leer + lo)",
+    "translation": "That message is fake. Don't read it.",
     "options": [
-      "la cierres",
-      "ciérrala",
-      "cierresla",
-      "la cierra"
+      "lo leas",
+      "léelo",
+      "leaslo",
+      "lo lee"
     ],
-    "answer": "la cierres",
-    "explanation": "Negative command: no la cierres.",
-    "hint": "Pronoun before the verb in negative commands.",
+    "answer": "lo leas",
+    "explanation": "Negative command: no lo leas.",
+    "hint": "No + pronoun + subjunctive.",
     "level": "B1-B2"
   },
   {
-    "category": "Usted affirmative",
-    "prompt": "Choose the correct usted command.",
-    "spanish": "___ aquí, por favor. (esperar)",
-    "translation": "Wait here, please.",
+    "category": "Tú affirmative",
+    "prompt": "Choose the correct affirmative tú command.",
+    "spanish": "___ cuidado con ese perro. (tener)",
+    "translation": "Be careful with that dog.",
     "options": [
-      "Espere",
-      "Espera",
-      "Esperes",
-      "Esperen"
+      "Ten",
+      "Tienes",
+      "Tengas",
+      "Tenga"
     ],
-    "answer": "Espere",
-    "explanation": "Usted commands use the present subjunctive form for usted.",
-    "hint": "Usted: espere.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Usted negative",
-    "prompt": "Choose the correct negative usted command.",
-    "spanish": "No ___ aquí, por favor. (fumar)",
-    "translation": "Don't smoke here, please.",
-    "options": [
-      "fume",
-      "fuma",
-      "fumes",
-      "fumen"
-    ],
-    "answer": "fume",
-    "explanation": "Negative usted commands also use the present subjunctive.",
-    "hint": "No fume.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Usted + pronouns",
-    "prompt": "Choose the correct formal command with pronouns.",
-    "spanish": "Necesito el reporte. ___, por favor. (dar + me + lo)",
-    "translation": "I need the report. Give it to me, please.",
-    "options": [
-      "Démelo",
-      "Me lo dé",
-      "Dámelo",
-      "No me lo dé"
-    ],
-    "answer": "Démelo",
-    "explanation": "Affirmative usted commands attach pronouns: dé + me + lo = démelo.",
-    "hint": "Affirmative formal: démelo.",
+    "answer": "Ten",
+    "explanation": "Tener has an irregular affirmative tú command: ten.",
+    "hint": "Irregular tú: ten.",
     "level": "B1-B2"
   },
   {
@@ -573,147 +429,35 @@ const originalQuestions = [
     "level": "B1-B2"
   },
   {
-    "category": "Ustedes affirmative",
-    "prompt": "Choose the correct ustedes command.",
-    "spanish": "___ sus libros, por favor. (abrir)",
-    "translation": "Open your books, please.",
+    "category": "Tú + pronouns",
+    "prompt": "Choose the correct negative tú command with pronouns.",
+    "spanish": "Ese libro es privado. No ___, por favor. (dar + me + lo)",
+    "translation": "That book is private. Don't give it to me, please.",
     "options": [
-      "Abran",
-      "Abre",
-      "Abra",
-      "Abras"
+      "me lo des",
+      "dámelo",
+      "desmelo",
+      "lo me des"
     ],
-    "answer": "Abran",
-    "explanation": "Ustedes commands use the present subjunctive form for ustedes.",
-    "hint": "Ustedes: abran.",
+    "answer": "me lo des",
+    "explanation": "In negative commands, pronouns go before the verb: no me lo des.",
+    "hint": "Negative: pronouns before the verb.",
     "level": "B1-B2"
   },
   {
-    "category": "Ustedes negative",
-    "prompt": "Choose the correct negative ustedes command.",
-    "spanish": "No ___ durante el examen. (hablar)",
-    "translation": "Don't talk during the exam.",
+    "category": "Tú + pronouns",
+    "prompt": "Choose the correct negative tú command with pronouns.",
+    "spanish": "Ya entendí el problema. No ___ otra vez. (explicar + me + lo)",
+    "translation": "I already understood the problem. Don't explain it to me again.",
     "options": [
-      "hablen",
-      "hablan",
-      "habla",
-      "hables"
+      "me lo expliques",
+      "explícamelo",
+      "explíquesmelo",
+      "lo me expliques"
     ],
-    "answer": "hablen",
-    "explanation": "Negative ustedes commands use the present subjunctive: no hablen.",
-    "hint": "No hablen.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Ustedes negative",
-    "prompt": "Choose the correct negative ustedes command.",
-    "spanish": "No ___ tarde mañana. (llegar)",
-    "translation": "Don't arrive late tomorrow.",
-    "options": [
-      "lleguen",
-      "llegan",
-      "llega",
-      "llegues"
-    ],
-    "answer": "lleguen",
-    "explanation": "With -gar verbs, g changes to gu in the subjunctive: lleguen.",
-    "hint": "Llegar → lleguen.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Ustedes + pronouns",
-    "prompt": "Choose the correct ustedes command with pronouns.",
-    "spanish": "El documento es importante. ___ ahora. (leer + lo)",
-    "translation": "The document is important. Read it now.",
-    "options": [
-      "Léanlo",
-      "Lo lean",
-      "No lo lean",
-      "Lee lo"
-    ],
-    "answer": "Léanlo",
-    "explanation": "Affirmative ustedes commands attach pronouns: lean + lo = léanlo.",
-    "hint": "Affirmative: pronoun attached.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Ustedes + pronouns",
-    "prompt": "Choose the correct negative ustedes command with pronouns.",
-    "spanish": "Ese documento es confidencial. No ___ . (leer + lo)",
-    "translation": "That document is confidential. Don't read it.",
-    "options": [
-      "lo lean",
-      "léanlo",
-      "leanlo",
-      "lo leen"
-    ],
-    "answer": "lo lean",
-    "explanation": "Negative ustedes command: no lo lean.",
-    "hint": "Negative: pronoun before verb.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Nosotros affirmative",
-    "prompt": "Choose the correct nosotros command.",
-    "spanish": "___ juntos para el examen. (estudiar)",
-    "translation": "Let's study together for the exam.",
-    "options": [
-      "Estudiemos",
-      "Estudiamos",
-      "Estudia",
-      "Estudien"
-    ],
-    "answer": "Estudiemos",
-    "explanation": "Nosotros commands use the present subjunctive: estudiemos.",
-    "hint": "Let's... = nosotros command.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Nosotros affirmative",
-    "prompt": "Choose the correct nosotros command.",
-    "spanish": "___ al cine esta noche. (ir)",
-    "translation": "Let's go to the movies tonight.",
-    "options": [
-      "Vayamos",
-      "Vamos",
-      "Veamos",
-      "Vayan"
-    ],
-    "answer": "Vayamos",
-    "explanation": "The formal nosotros command of ir is vayamos, though vamos is common conversationally.",
-    "hint": "Nosotros command of ir: vayamos.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Nosotros negative",
-    "prompt": "Choose the correct negative nosotros command.",
-    "spanish": "No ___ aquí. (comer)",
-    "translation": "Let's not eat here.",
-    "options": [
-      "comamos",
-      "comemos",
-      "coman",
-      "come"
-    ],
-    "answer": "comamos",
-    "explanation": "Negative nosotros command: no comamos.",
-    "hint": "No + present subjunctive.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Nosotros + pronouns",
-    "prompt": "Choose the correct nosotros command with a reflexive pronoun.",
-    "spanish": "Estamos cansados. ___ un momento. (sentarse)",
-    "translation": "We are tired. Let's sit down for a moment.",
-    "options": [
-      "Sentémonos",
-      "Nos sentemos",
-      "Sentemosnos",
-      "No nos sentemos"
-    ],
-    "answer": "Sentémonos",
-    "explanation": "Affirmative nosotros commands attach the reflexive pronoun: sentémonos.",
-    "hint": "Affirmative: pronoun attached.",
+    "answer": "me lo expliques",
+    "explanation": "In negative commands, both pronouns go before the verb: no me lo expliques.",
+    "hint": "Negative: no me lo expliques.",
     "level": "B1-B2"
   },
   {
@@ -733,35 +477,35 @@ const originalQuestions = [
     "level": "B1-B2"
   },
   {
-    "category": "Theory",
-    "prompt": "Choose the correct rule.",
-    "spanish": "In affirmative commands with pronouns, the pronouns usually go...",
-    "translation": "Example: dámelo, léelo, cómprala.",
+    "category": "Mixed challenge",
+    "prompt": "Choose the best formal command.",
+    "spanish": "Hablas con un cliente formalmente. Quieres decir: send it to me.",
+    "translation": "You are speaking formally to a client. You want to say: send it to me.",
     "options": [
-      "attached to the end",
-      "before the verb",
-      "after no",
-      "between the subject and verb"
+      "Envíemelo.",
+      "Envíamelo.",
+      "Me lo envía.",
+      "No me lo envíe."
     ],
-    "answer": "attached to the end",
-    "explanation": "Affirmative commands attach pronouns to the end of the command.",
-    "hint": "Affirmative = attached.",
+    "answer": "Envíemelo.",
+    "explanation": "Formal affirmative command: envíe + me + lo = envíemelo.",
+    "hint": "Usted + pronouns.",
     "level": "B1-B2"
   },
   {
-    "category": "Theory",
-    "prompt": "Choose the correct rule.",
-    "spanish": "In negative commands with pronouns, the pronouns usually go...",
-    "translation": "Example: no me lo des, no lo leas.",
+    "category": "Tú affirmative",
+    "prompt": "Choose the correct affirmative tú command.",
+    "spanish": "___ aquí un momento. (venir)",
+    "translation": "Come here for a moment.",
     "options": [
-      "before the verb",
-      "attached to the end",
-      "after the verb",
-      "after the noun"
+      "Ven",
+      "Vienes",
+      "Vengas",
+      "Venga"
     ],
-    "answer": "before the verb",
-    "explanation": "Negative commands place pronouns before the conjugated command.",
-    "hint": "Negative = before.",
+    "answer": "Ven",
+    "explanation": "Venir has an irregular affirmative tú command: ven.",
+    "hint": "Irregular tú: ven.",
     "level": "B1-B2"
   },
   {
@@ -781,6 +525,278 @@ const originalQuestions = [
     "level": "B1-B2"
   },
   {
+    "category": "Ustedes + pronouns",
+    "prompt": "Choose the correct ustedes command with pronouns.",
+    "spanish": "El documento es importante. ___ ahora. (leer + lo)",
+    "translation": "The document is important. Read it now.",
+    "options": [
+      "Léanlo",
+      "Lo lean",
+      "No lo lean",
+      "Lee lo"
+    ],
+    "answer": "Léanlo",
+    "explanation": "Affirmative ustedes commands attach pronouns: lean + lo = léanlo.",
+    "hint": "Affirmative: pronoun attached.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú negative",
+    "prompt": "Choose the correct negative tú command.",
+    "spanish": "No ___ tarde. (venir)",
+    "translation": "Don't come late.",
+    "options": [
+      "vengas",
+      "ven",
+      "vienes",
+      "venga"
+    ],
+    "answer": "vengas",
+    "explanation": "The negative tú command of venir is no vengas.",
+    "hint": "Negative tú of venir: no vengas.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú + pronouns",
+    "prompt": "Choose the correct negative tú command with pronoun.",
+    "spanish": "Hace calor. No ___ todavía. (cerrar + la)",
+    "translation": "It's hot. Don't close it yet.",
+    "options": [
+      "la cierres",
+      "ciérrala",
+      "cierresla",
+      "la cierra"
+    ],
+    "answer": "la cierres",
+    "explanation": "Negative command: no la cierres.",
+    "hint": "Pronoun before the verb in negative commands.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Theory",
+    "prompt": "Choose the correct rule.",
+    "spanish": "In affirmative commands with pronouns, the pronouns usually go...",
+    "translation": "Example: dámelo, léelo, cómprala.",
+    "options": [
+      "attached to the end",
+      "before the verb",
+      "after no",
+      "between the subject and verb"
+    ],
+    "answer": "attached to the end",
+    "explanation": "Affirmative commands attach pronouns to the end of the command.",
+    "hint": "Affirmative = attached.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Ustedes affirmative",
+    "prompt": "Choose the correct ustedes command.",
+    "spanish": "___ sus libros, por favor. (abrir)",
+    "translation": "Open your books, please.",
+    "options": [
+      "Abran",
+      "Abre",
+      "Abra",
+      "Abras"
+    ],
+    "answer": "Abran",
+    "explanation": "Ustedes commands use the present subjunctive form for ustedes.",
+    "hint": "Ustedes: abran.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú + pronouns",
+    "prompt": "Choose the correct affirmative tú command with pronouns.",
+    "spanish": "Necesito ese libro. ___, por favor. (dar + me + lo)",
+    "translation": "I need that book. Give it to me, please.",
+    "options": [
+      "Dámelo",
+      "Me lo da",
+      "No me lo des",
+      "Dálo me"
+    ],
+    "answer": "Dámelo",
+    "explanation": "In affirmative commands, pronouns attach to the end: da + me + lo = dámelo.",
+    "hint": "Affirmative: attach pronouns.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú + pronouns",
+    "prompt": "Choose the correct affirmative tú command with pronoun.",
+    "spanish": "Esta camisa me gusta. ___, por favor. (comprar + la)",
+    "translation": "I like this shirt. Buy it, please.",
+    "options": [
+      "Cómprala",
+      "La compra",
+      "No la compres",
+      "Compra la"
+    ],
+    "answer": "Cómprala",
+    "explanation": "Affirmative commands attach the direct object pronoun and often need an accent: cómprala.",
+    "hint": "Compra + la = cómprala.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Ustedes negative",
+    "prompt": "Choose the correct negative ustedes command.",
+    "spanish": "No ___ tarde mañana. (llegar)",
+    "translation": "Don't arrive late tomorrow.",
+    "options": [
+      "lleguen",
+      "llegan",
+      "llega",
+      "llegues"
+    ],
+    "answer": "lleguen",
+    "explanation": "With -gar verbs, g changes to gu in the subjunctive: lleguen.",
+    "hint": "Llegar → lleguen.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú affirmative",
+    "prompt": "Choose the correct affirmative tú command.",
+    "spanish": "___ la verdad. (decir)",
+    "translation": "Tell the truth.",
+    "options": [
+      "Di",
+      "Dice",
+      "Digas",
+      "Diga"
+    ],
+    "answer": "Di",
+    "explanation": "Decir has an irregular affirmative tú command: di.",
+    "hint": "Irregular tú: di.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú + pronouns",
+    "prompt": "Choose the correct negative tú command with pronoun.",
+    "spanish": "Esa camisa es muy cara. No ___ todavía. (comprar + la)",
+    "translation": "That shirt is very expensive. Don't buy it yet.",
+    "options": [
+      "la compres",
+      "cómprala",
+      "compresla",
+      "la compra"
+    ],
+    "answer": "la compres",
+    "explanation": "Negative command: pronoun before the verb, no la compres.",
+    "hint": "No + pronoun + subjunctive.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Nosotros affirmative",
+    "prompt": "Choose the correct nosotros command.",
+    "spanish": "___ juntos para el examen. (estudiar)",
+    "translation": "Let's study together for the exam.",
+    "options": [
+      "Estudiemos",
+      "Estudiamos",
+      "Estudia",
+      "Estudien"
+    ],
+    "answer": "Estudiemos",
+    "explanation": "Nosotros commands use the present subjunctive: estudiemos.",
+    "hint": "Let's... = nosotros command.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Nosotros negative",
+    "prompt": "Choose the correct negative nosotros command.",
+    "spanish": "No ___ aquí. (comer)",
+    "translation": "Let's not eat here.",
+    "options": [
+      "comamos",
+      "comemos",
+      "coman",
+      "come"
+    ],
+    "answer": "comamos",
+    "explanation": "Negative nosotros command: no comamos.",
+    "hint": "No + present subjunctive.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú affirmative",
+    "prompt": "Choose the correct affirmative tú command.",
+    "spanish": "___ el libro en la mesa. (poner)",
+    "translation": "Put the book on the table.",
+    "options": [
+      "Pon",
+      "Pones",
+      "Pongas",
+      "Ponga"
+    ],
+    "answer": "Pon",
+    "explanation": "Poner has an irregular affirmative tú command: pon.",
+    "hint": "Irregular tú: pon.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú negative",
+    "prompt": "Choose the correct negative tú command.",
+    "spanish": "No ___ eso ahora. (hacer)",
+    "translation": "Don't do that now.",
+    "options": [
+      "hagas",
+      "haz",
+      "hace",
+      "haga"
+    ],
+    "answer": "hagas",
+    "explanation": "The negative tú command of hacer is no hagas.",
+    "hint": "Negative tú of hacer: no hagas.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Usted affirmative",
+    "prompt": "Choose the correct usted command.",
+    "spanish": "___ aquí, por favor. (esperar)",
+    "translation": "Wait here, please.",
+    "options": [
+      "Espere",
+      "Espera",
+      "Esperes",
+      "Esperen"
+    ],
+    "answer": "Espere",
+    "explanation": "Usted commands use the present subjunctive form for usted.",
+    "hint": "Usted: espere.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú negative",
+    "prompt": "Choose the correct negative tú command.",
+    "spanish": "No ___ tan impaciente. (ser)",
+    "translation": "Don't be so impatient.",
+    "options": [
+      "seas",
+      "sé",
+      "eres",
+      "sea"
+    ],
+    "answer": "seas",
+    "explanation": "The negative tú command of ser is no seas.",
+    "hint": "Negative tú of ser: no seas.",
+    "level": "B1-B2"
+  },
+  {
+    "category": "Tú affirmative",
+    "prompt": "Choose the correct affirmative tú command.",
+    "spanish": "___ al supermercado después de clase. (ir)",
+    "translation": "Go to the supermarket after class.",
+    "options": [
+      "Ve",
+      "Vas",
+      "Vayas",
+      "Vaya"
+    ],
+    "answer": "Ve",
+    "explanation": "Ir has an irregular affirmative tú command: ve.",
+    "hint": "Irregular tú: ve.",
+    "level": "B1-B2"
+  },
+  {
     "category": "Mixed challenge",
     "prompt": "Choose the best command.",
     "spanish": "Tu amigo está manejando muy rápido. ¿Qué le dices?",
@@ -797,67 +813,51 @@ const originalQuestions = [
     "level": "B1-B2"
   },
   {
-    "category": "Mixed challenge",
-    "prompt": "Choose the best command.",
-    "spanish": "Tu estudiante quiere copiar la respuesta. ¿Qué le dices?",
-    "translation": "Your student wants to copy the answer. What do you tell him/her?",
+    "category": "Tú negative",
+    "prompt": "Choose the correct negative tú command.",
+    "spanish": "No ___ miedo. (tener)",
+    "translation": "Don't be afraid.",
     "options": [
-      "No la copies.",
-      "Cópiala.",
-      "No cópiala.",
-      "No la copia."
+      "tengas",
+      "ten",
+      "tienes",
+      "tenga"
     ],
-    "answer": "No la copies.",
-    "explanation": "Negative tú command with pronoun: no la copies.",
-    "hint": "No + pronoun + subjunctive.",
+    "answer": "tengas",
+    "explanation": "The negative tú command of tener is no tengas.",
+    "hint": "Negative tú of tener: no tengas.",
     "level": "B1-B2"
   },
   {
-    "category": "Mixed challenge",
-    "prompt": "Choose the best formal command.",
-    "spanish": "Hablas con un cliente formalmente. Quieres decir: send it to me.",
-    "translation": "You are speaking formally to a client. You want to say: send it to me.",
+    "category": "Usted negative",
+    "prompt": "Choose the correct negative usted command.",
+    "spanish": "No ___ aquí, por favor. (fumar)",
+    "translation": "Don't smoke here, please.",
     "options": [
-      "Envíemelo.",
-      "Envíamelo.",
-      "Me lo envía.",
-      "No me lo envíe."
+      "fume",
+      "fuma",
+      "fumes",
+      "fumen"
     ],
-    "answer": "Envíemelo.",
-    "explanation": "Formal affirmative command: envíe + me + lo = envíemelo.",
-    "hint": "Usted + pronouns.",
+    "answer": "fume",
+    "explanation": "Negative usted commands also use the present subjunctive.",
+    "hint": "No fume.",
     "level": "B1-B2"
   },
   {
-    "category": "Mixed challenge",
-    "prompt": "Choose the best ustedes command.",
-    "spanish": "Estudiantes, ___ sus respuestas antes de entregar. (revisar)",
-    "translation": "Students, check your answers before turning them in.",
+    "category": "Tú negative",
+    "prompt": "Choose the correct negative tú command.",
+    "spanish": "No ___ tan rápido. (hablar)",
+    "translation": "Don't speak so fast.",
     "options": [
-      "revisen",
-      "revisa",
-      "revise",
-      "revisas"
+      "hables",
+      "habla",
+      "hable",
+      "hablen"
     ],
-    "answer": "revisen",
-    "explanation": "Ustedes command: revisen.",
-    "hint": "Ustedes.",
-    "level": "B1-B2"
-  },
-  {
-    "category": "Mixed challenge",
-    "prompt": "Choose the best nosotros command.",
-    "spanish": "Tenemos poco tiempo. ___ ahora mismo. (empezar)",
-    "translation": "We have little time. Let's start right now.",
-    "options": [
-      "Empecemos",
-      "Empezamos",
-      "Empieza",
-      "Empiecen"
-    ],
-    "answer": "Empecemos",
-    "explanation": "Nosotros command uses the present subjunctive. Empezar changes z to c: empecemos.",
-    "hint": "Empezar → empecemos.",
+    "answer": "hables",
+    "explanation": "Negative tú commands use the present subjunctive.",
+    "hint": "Negative tú: no hables.",
     "level": "B1-B2"
   }
 ];
@@ -912,5 +912,3 @@ function finishQuiz(){const correct=getCorrectCount(), percentage=Math.round((co
 function renderReview(){reviewList.innerHTML="";questions.forEach((q,index)=>{const item=document.createElement("div");item.className=`review-item ${answers[index].correct?"good":"bad"}`;item.innerHTML=`<strong>${index+1}. ${escapeHTML(q.category)}</strong><p style="margin-top:6px;color:#667085">${escapeHTML(q.spanish)}</p>${q.translation?`<p style="color:#667085"><strong>English:</strong> ${escapeHTML(q.translation)}</p>`:""}<p><strong>Your answer:</strong> ${escapeHTML(answers[index].value||"No answer")}</p><p><strong>Correct answer:</strong> ${escapeHTML(q.answer)}</p><p style="color:#667085">${escapeHTML(q.explanation)}</p>`;reviewList.appendChild(item);});}
 startBtn.addEventListener("click",startQuiz);restartBtn.addEventListener("click",startQuiz);previousBtn.addEventListener("click",previousQuestion);nextBtn.addEventListener("click",nextQuestion);checkBtn.addEventListener("click",checkAnswer);hintBtn.addEventListener("click",showHint);tryAgainBtn.addEventListener("click",tryAgain);finishBtn.addEventListener("click",finishQuiz);
 </script>
-</body>
-</html>
